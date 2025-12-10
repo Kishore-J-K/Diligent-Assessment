@@ -1,0 +1,47 @@
+Prompt 1
+
+Generate Python code to generate 5 synthetic e-commerce CSV files:
+- customers.csv:
+  customer_id (should be a int and unique), name, email, signup_date, region
+- products.csv:
+  product_id (should be a int and unique), product_name, category, price, stock_quantity,
+- orders.csv:
+  order_id (should be a int and unique), customer_id (FK → customers), order_date, payment_method, order_status,
+- order_items.csv:
+  item_id (should be a int and unique), order_id (FK → orders), product_id (FK → products), quantity, unit_price
+- reviews.csv:
+  review_id (should be a int and unique), customer_id (FK → customers), product_id (FK → products), rating (1–5), review_text, review_date
+Requirements:
+- Generate 500 customers, 200 products, 2000 orders, 3500 order_items, 500 reviews
+- Use realistic names, emails, and regions
+- Save each CSV in the current folder
+- Use Python, pandas, and Faker
+
+Prompt 2
+
+Load CSVs into SQLite database:
+- Database name: ecommerce.db
+- Create tables with proper data types
+- Enforce foreign key relationships
+- Drop tables if they already exist
+- Print the number of rows inserted for each table
+- Wrap everything in a function called load_data()
+- Use sqlite3 and pandas
+
+Prompt 3
+
+Write SQL join query:
+- Join customers, orders, order_items, and products
+- Output columns: customer_id, customer_name, order_id, order_date, product_name, quantity, total_price (quantity * unit_price)
+- Sort results by order_date descending
+- Limit 50 rows
+- Use proper INNER JOINs
+
+Prompt 4
+
+Execute SQL query in Python:
+- Connect to ecommerce.db
+- Execute the SQL join query
+- Print the results as a pandas DataFrame
+- Include exception handling
+- Fully runnable Python code
