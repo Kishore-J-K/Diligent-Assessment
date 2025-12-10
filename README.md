@@ -4,9 +4,9 @@ generate_csv.py – Generates synthetic CSV files (customers, products, orders) 
 
 load_database.py – Creates a SQLite database (ecommerce.db) and loads the generated CSV data into tables.
 
-execute_query.py – Executes SQL queries on the database and prints outputs.
-
 sql_join_query.py – Contains Python code for JOIN-based SQL queries.
+
+execute_query.py – Executes SQL queries on the database and prints outputs.
 
 # Documents
 
